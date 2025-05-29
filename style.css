@@ -1,0 +1,110 @@
+/* Additional custom styles */
+.fill-current {
+    fill: currentColor;
+}
+
+/* Focus styles */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+/* Accordion animation */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.accordion-content.active {
+    max-height: 1000px;
+    padding-bottom: 1rem;
+}
+
+.accordion-button i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-button.active i {
+    transform: rotate(180deg);
+}
+
+/* Carousel fade effect */
+.carousel-item {
+    transition: opacity 0.3s ease;
+}
+
+/* Screenshort */
+.screen-slider-content {
+    position: relative
+}
+.ptb-100{
+    padding: 100px 0;
+}
+.section-heading h2 span{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.screenshot-frame {
+    background-image: url(../img/phone-frame2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    width: 285px;
+    height: 518px;
+    position: absolute;
+    top: -10px;
+    left: calc(50% + 0.5px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 40px;
+}
+@media (min-width: 320px) and (max-width: 1200px){
+    .screenshot-frame{
+        display: none;
+    }
+}
+.screen-carousel .owl-item img {
+    -webkit-transform: scale(.85);
+    transform: scale(.85);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border: 1px solid #ebebeb;
+    border-radius: 30px
+}
+
+.screen-carousel .owl-item.active.center img {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+.screen-carousel.dot-indicator.owl-theme .owl-nav.disabled+.owl-dots{
+    margin-top: 20px;
+}
+
+.dot-indicator.owl-theme button.owl-dot span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    background: #d8d8d8;
+    border-radius: 50%;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    transition: 0.3s;
+}
+.dot-indicator.owl-theme button.owl-dot:focus{
+    border: none;
+    outline: none;
+}
+.dot-indicator.owl-theme button.owl-dot.active span{
+    background: #9629e6;
+    border: 2px solid transparent;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+/*owl carousel slider*/
+.owl-carousel .owl-item .client-img img{
+    width: 60px;
+    display: initial;
+}
