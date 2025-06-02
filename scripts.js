@@ -34,6 +34,17 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Newsletter form submission
+    const newsletterForm = document.getElementById('newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Here you would normally send the email to a server
+            alert('Thank you for subscribing to our newsletter!');
+            newsletterForm.reset();
+        });
+    }
 
     // Accordion functionality
     const accordionButtons = document.querySelectorAll('.accordion-button');
@@ -51,6 +62,41 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    // Image carousel functionality
+    const screenshots = [
+        {
+            src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+            alt: 'MediScan Dashboard - Main interface showing OCR processing',
+            title: 'Main Dashboard'
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+            alt: 'Document scanning interface with real-time processing',
+            title: 'Document Scanning'
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+            alt: 'Results display showing structured medical data',
+            title: 'Results & Analytics'
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+            alt: 'Mobile app interface for on-the-go scanning',
+            title: 'Mobile Interface'
+        },
+        {
+            src: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+            alt: 'Export options and data management features',
+            title: 'Export & Management'
+        }
+    ];
+
+    let currentImageIndex = 0;
+    const carouselImage = document.getElementById('carousel-image');
+    const carouselTitle = document.getElementById('carousel-title');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const thumbnailsContainer = document.getElementById('thumbnails');
     
     // Create thumbnails
     if (thumbnailsContainer) {
@@ -137,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
-    
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -160,4 +206,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
