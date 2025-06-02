@@ -29,7 +29,7 @@
 <body class="min-h-screen">
     <!-- Header -->
     <header class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <!-- Logo -->
                 <div class="flex items-center space-x-2">
@@ -43,7 +43,7 @@
                 </div>
 
                 <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-8">
+                <nav class="hidden md:flex items-center  space-x-8">
                     <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
                     <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a>
                     <a href="#app-features" class="text-gray-700 hover:text-blue-600 transition-colors">App Features</a>
@@ -79,8 +79,8 @@
                     <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition-colors py-2">Pricing</a>
                     <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors py-2">FAQ</a>
                     <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors py-2">Contact Us</a>
-                    <div class="flex flex-col space-y-2 pt-4">
-                        <button class="border border-blue-600 text-blue-600 px-4 py-2 rounded-md">Sign In</button>
+                    <div class="flex flex-col  pt-4">
+                        
                         <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">Get Started</button>
                     </div>
                 </nav>
@@ -118,13 +118,10 @@
                     </div>
 
                     <!-- Trust Indicators -->
-                    <div class="flex items-center space-x-8 pt-8">
+                    <div class="flex items-center space-x-8">
+                        
                         <div class="flex items-center space-x-2">
-                            <i data-lucide="apple" class="h-5 w-5 text-green-600"></i>
-                            <span class="text-sm text-gray-600">iOS</span>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="monitor" class="h-5 w-5 text-yellow-600"></i>
+                            <i data-lucide="monitor" class="h-5 w-5 text-green-600"></i>
                             <span class="text-sm text-gray-600">Web</span>
                         </div>
                         <div class="flex items-center space-x-2">
@@ -371,7 +368,7 @@
 
     <!-- Screenshots Section -->
     <section id="screenshots" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="px-4 sm:px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                    Explore Our App in Action
@@ -382,78 +379,37 @@
                 </p>
             </div>
 
-            <!-- Carousel -->
-            <div class="relative mb-8">
-                <div class="overflow-hidden rounded-2xl shadow-2xl">
-                    <div class="relative">
-                        <img id="carousel-image" src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80">
-                        <div class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
-                            <h3 id="carousel-title" class="font-semibold">Main Dashboard</h3>
-                        </div>
-                    </div>
+            <div class="bg-gradient-to-r from-purple-700 to-blue-500 text-white">
+                <div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 relative overflow-hidden">
+                
+                <!-- Text content -->
+                <div class="max-w-lg z-10">
+                  <h2 class="text-3xl md:text-4xl font-bold mb-6">Download Apps and Increase Revenue</h2>
+                  <p class="text-white text-lg mb-8 leading-relaxed">
+                    Feugiat eros, ac tincidunt ligula massa in faucibus orci luctus posuere cubilia curae integer congue leo credibly deliver seamless web-readiness and customer directed platforms. Objectively generate competitive infomediaries through front-end best.
+                  </p>
+                
+                  <!-- Buttons -->
+                  <div class="flex space-x-4">
+                    <a href="#" class="bg-white text-purple-700 font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-gray-100 transition">
+                      <i data-lucide="play"></i>
+                      <span>Play Store</span>
+                    </a>
+                
+                    
+                  </div>
                 </div>
-
-                <!-- Navigation Buttons -->
-                <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg p-2 rounded-full hover:bg-gray-50">
-                    <i data-lucide="chevron-left" class="h-4 w-4"></i>
-                </button>
-                <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white shadow-lg p-2 rounded-full hover:bg-gray-50">
-                    <i data-lucide="chevron-right" class="h-4 w-4"></i>
-                </button>
-            </div>
-
-            <!-- Thumbnail Navigation -->
-            <div id="thumbnails" class="flex justify-center space-x-4 overflow-x-auto">
-                <!-- Thumbnails will be populated by JavaScript -->
-            </div>
-        </div>
-
-        <!-- Lightbox -->
-        <div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4 hidden">
-            <div class="relative max-w-6xl max-h-full">
-                <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain">
-                <button id="close-lightbox" class="absolute top-4 right-4 bg-white p-2 rounded-full">
-                    <i data-lucide="x" class="h-4 w-4"></i>
-                </button>
-                <div class="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
-                    <h3 id="lightbox-title" class="font-semibold"></h3>
-                    <p id="lightbox-counter" class="text-sm opacity-90"></p>
+                
+                <!-- Floating phones image -->
+                <div class="absolute bottom-0 right-0 hidden md:block">
+                  <img src="img/image-11.png" alt="Phones" class="max-h-[500px]"/>
+                </div>
+                
                 </div>
             </div>
-        </div>
-
+            
     </section>
-    <div class="bg-gradient-to-r from-purple-700 to-blue-500 text-white">
-<div class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16 relative overflow-hidden">
-
-<!-- Text content -->
-<div class="max-w-lg z-10">
-  <h2 class="text-3xl md:text-4xl font-bold mb-6">Download Apps and Increase Revenue</h2>
-  <p class="text-white text-lg mb-8 leading-relaxed">
-    Feugiat eros, ac tincidunt ligula massa in faucibus orci luctus posuere cubilia curae integer congue leo credibly deliver seamless web-readiness and customer directed platforms. Objectively generate competitive infomediaries through front-end best.
-  </p>
-
-  <!-- Buttons -->
-  <div class="flex space-x-4">
-    <a href="#" class="bg-white text-purple-700 font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-gray-100 transition">
-      <i data-lucide="apple"></i>
-      <span>App Store</span>
-    </a>
-
-    <a href="#" class="bg-transparent border border-white font-semibold px-6 py-3 rounded-full flex items-center space-x-2 hover:bg-white hover:text-blue-600 transition">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 512 512"><path d="M325.3 234.3L104.3 34.4C95.3 26.6 85.4 16.7 77.6 7.7 58.5-14.3 32 5.8 32 32v448c0 26.2 26.5 46.3 45.6 24.3 7.8-9 17.7-18.9 26.7-26.7l221-200c18.2-16.5 18.2-45.7 0-62.3z"/></svg>
-      <span>Play Store</span>
-    </a>
-  </div>
-</div>
-
-<!-- Floating phones image -->
-<div class="absolute bottom-0 right-0 hidden md:block">
-  <img src="img/image-11.png" alt="Phones" class="max-h-[500px]"/>
-</div>
-
-</div>
-    </div>
+    
     <!-- Reviews Section -->
     <section id="reviews" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1061,21 +1017,20 @@
                         <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
                     </ul>
                 </div>
-
+                
                 <div>
-                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
-                    <p class="text-gray-400 mb-4">
-                        Subscribe to our newsletter for the latest updates and features.
-                    </p>
-                    <form id="newsletter-form" class="space-y-2">
-                        <div class="flex rounded-lg overflow-hidden">
-                            <input type="email" placeholder="Your email" class="w-full px-4 py-2 text-gray-900">
-                            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4">
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
                 </div>
+
+                
             </div>
 
             <div class="border-t border-gray-800 pt-8">
