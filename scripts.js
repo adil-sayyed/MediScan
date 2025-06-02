@@ -31,11 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Newsletter form
+    // Newsletter form submission
     const newsletterForm = document.getElementById('newsletter-form');
     if (newsletterForm) {
-        newsletterForm.addEventListener('submit', function (event) {
+        newsletterForm.addEventListener('submit', function(event) {
             event.preventDefault();
+            
+            // Here you would normally send the email to a server
             alert('Thank you for subscribing to our newsletter!');
             newsletterForm.reset();
         });
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // Screenshots data
+    // Image carousel functionality
     const screenshots = [
         {
             src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
@@ -87,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
     const thumbnailsContainer = document.getElementById('thumbnails');
-
+    
+    // Create thumbnails
     if (thumbnailsContainer) {
         screenshots.forEach((screenshot, index) => {
             const thumbnailBtn = document.createElement('button');
@@ -157,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Smooth scrolling
+    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
