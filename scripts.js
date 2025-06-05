@@ -271,11 +271,7 @@ effect: "coverflow",
 
     });
 
-    /**
- * Owl Carousel v2.3.4
- * Copyright 2013-2018 David Deutsch
- * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
- */
+    /* Screenshots JS*/ 
 !function(a, b, c, d) {
     function e(b, c) {
         this.settings = null,
@@ -1895,3 +1891,106 @@ function(a, b, c, d) {
     j.csstransforms() && (a.support.transform = new String(f("transform")),
     a.support.transform3d = j.csstransforms3d())
 }(window.Zepto || window.jQuery, window, document);
+
+/* Screenshots JS */
+
+ 
+        document.addEventListener('DOMContentLoaded', function () {
+            lucide.createIcons();
+
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.setAttribute('data-lucide', mobileMenu.classList.contains('hidden') ? 'menu' : 'x');
+                lucide.createIcons();
+            });
+
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.setAttribute('data-lucide', 'menu');
+                    lucide.createIcons();
+                });
+            });
+
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 10) {
+                    // Add gradient background, blur, and shadow on scroll
+                    header.classList.remove('bg-transparent');
+                    header.classList.add(
+                        'bg-gradient-to-br',
+                        'from-purple-600',
+                        'to-blue-600',
+                        'backdrop-blur-sm',
+                        'shadow-lg',
+                        'bg-opacity-90'
+                    );
+                } else {
+                    // Restore transparent header at top
+                    header.classList.remove(
+                        'bg-gradient-to-br',
+                        'from-purple-600',
+                        'to-blue-600',
+                        'backdrop-blur-sm',
+                        'shadow-lg',
+                        'bg-opacity-90'
+                    );
+                    header.classList.add('bg-transparent');
+                }
+            });
+
+        });
+
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Tab switching functionality
+        function setActiveTab(tabId) {
+            // Update active tab button
+            document.querySelectorAll('[onclick^="setActiveTab"]').forEach(btn => {
+                btn.classList.remove('bg-gray-50');
+                btn.querySelector('span').classList.remove('text-gray-900');
+                btn.querySelector('span').classList.add('text-gray-600');
+                if (btn.querySelector('div')) btn.querySelector('div').remove();
+            });
+
+            const activeBtn = document.querySelector(`[onclick="setActiveTab('${tabId}')"]`);
+            activeBtn.classList.add('bg-gray-50');
+            activeBtn.querySelector('span').classList.remove('text-gray-600');
+            activeBtn.querySelector('span').classList.add('text-gray-900');
+
+            // Add border indicator
+            const borderColors = {
+                diagnose: 'border-purple-500',
+                records: 'border-purple-500',
+                treatment: 'border-blue-500',
+                monitoring: 'border-orange-500'
+            };
+
+            const borderDiv = document.createElement('div');
+            borderDiv.className = `absolute bottom-0 left-0 right-0 h-1 ${borderColors[tabId]} border-b-2 rounded-full`;
+            activeBtn.appendChild(borderDiv);
+
+            // Show/hide tab content and images
+            const tabIds = ['diagnose', 'records', 'treatment', 'monitoring'];
+            tabIds.forEach(id => {
+                const content = document.getElementById(`tab-${id}`);
+                const img = document.getElementById(`tab-${id}-img`);
+                if (content) content.classList.add('hidden');
+                if (img) img.classList.add('hidden');
+            });
+
+            const activeContent = document.getElementById(`tab-${tabId}`);
+            const activeImg = document.getElementById(`tab-${tabId}-img`);
+            if (activeContent) activeContent.classList.remove('hidden');
+            if (activeImg) activeImg.classList.remove('hidden');
+        }
+
+    
