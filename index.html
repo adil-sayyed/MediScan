@@ -133,11 +133,11 @@
                     <div class="flex items-center space-x-8">
                         <div class="flex items-center space-x-2">
                             <i data-lucide="monitor" class="h-5 w-5 text-green-300"></i>
-                            <span class="text-sm text-white/80">Web</span>
+                            <span class="text-sm text-white/80 cursor-pointer">Web</span>
                         </div>
                         <div class="flex items-center space-x-2">
                             <i data-lucide="smartphone" class="h-5 w-5 text-blue-200"></i>
-                            <span class="text-sm text-white/80">Android</span>
+                            <span class="text-sm text-white/80 cursor-pointer">Android</span>
                         </div>
                     </div>
                 </div>
@@ -175,9 +175,11 @@
                     <div class="absolute -top-4 -right-4 bg-white text-purple-600 p-3 rounded-full shadow-lg">
                         <span class="text-sm font-semibold">OCR</span>
                     </div>
-                    <div class="absolute -bottom-4 -left-4 bg-green-400 text-white p-3 rounded-full shadow-lg">
+                    <div
+                        class="absolute -bottom-4 -left-4 bg-green-400 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg">
                         <span class="text-sm font-semibold">AI</span>
                     </div>
+
                 </div>
             </div>
 
@@ -192,8 +194,8 @@
             <div
                 class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110">
                 <div class="w-20 h-20 mx-auto mb-6">
-                    <img src="/img/HIPAA-compliant.png" alt="HIPAA Icon"
-                        class="w-full h-full object-contain rounded-lg" />
+                    <img src="/img/HIPAA-compliant.png" alt="HIPAA Icon" class="w-full h-full object-contain rounded-lg"
+                        loading="lazy" />
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">HIPAA Compliant</h3>
                 <p class="text-gray-600 leading-relaxed text-center">
@@ -206,7 +208,7 @@
                 class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110">
                 <div class="w-20 h-20 mx-auto mb-6">
                     <img src="/img/Brain-Diagnosis.jpg" alt="AI Diagnosis Icon"
-                        class="w-28 h-28 object-contain rounded-lg mx-auto" />
+                        class="w-28 h-28 object-contain rounded-lg mx-auto" loading="lazy" />
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">AI-Powered Diagnosis</h3>
                 <p class="text-gray-600 leading-relaxed text-center">
@@ -219,7 +221,7 @@
                 class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110">
                 <div class="w-28 h-28 mx-auto mb-6 flex items-center justify-center">
                     <img src="/img/Prescription.jpg" alt="E-Prescription Icon"
-                        class="w-full h-full object-contain rounded-lg" />
+                        class="w-full h-full object-contain rounded-lg" loading="lazy" />
                 </div>
                 <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">E-Prescription Ready</h3>
                 <p class="text-gray-600 leading-relaxed text-center">
@@ -280,7 +282,8 @@
                     <div class="flex items-start space-x-4">
                         <div
                             class="w-12 h-12 text-blue-600 bg-white rounded-lg flex items-center justify-center shadow-md flex-shrink-0">
-                            <img src="/img/mission.png" alt="Mission Icon" class="h-8 w-8 object-contain rounded" />
+                            <img src="/img/Mission.svg" alt="Mission Icon" class="h-8 w-8 object-contain rounded"
+                                loading="lazy" />
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Our Mission</h3>
@@ -295,7 +298,8 @@
                     <div class="flex items-start space-x-4">
                         <div
                             class="w-12 h-12 text-green-600 bg-white rounded-lg flex items-center justify-center shadow-md flex-shrink-0">
-                            <img src="/img/vision.jpg" alt="Mission Icon" class="h-10 w-10 object-contain rounded" />
+                            <img src="/img/Vision.svg" alt="Mission Icon" class="h-10 w-10 object-contain rounded"
+                                loading="lazy" />
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Our Vision</h3>
@@ -310,7 +314,8 @@
                     <div class="flex items-start space-x-4">
                         <div
                             class="w-12 h-12 text-purple-600 bg-white rounded-lg flex items-center justify-center shadow-md flex-shrink-0">
-                            <img src="/img/community.jpg" alt="Mission Icon" class="h-10 w-10 object-contain rounded" />
+                            <img src="/img/Community.svg" alt="Mission Icon" class="h-10 w-10 object-contain rounded"
+                                loading="lazy" />
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Our Community</h3>
@@ -325,8 +330,8 @@
                     <div class="flex items-start space-x-4">
                         <div
                             class="w-12 h-12 text-red-600 bg-white rounded-lg flex items-center justify-center shadow-md flex-shrink-0">
-                            <img src="/img/commitment.jpg" alt="Mission Icon"
-                                class="h-10 w-10 object-contain rounded" />
+                            <img src="/img/Commitment.svg" alt="Mission Icon" class="h-10 w-10 object-contain rounded"
+                                loading="lazy" />
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-gray-900 mb-3">Our Commitment</h3>
@@ -372,7 +377,7 @@
                 <div class="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Feature 1 -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="scan-text" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -386,7 +391,7 @@
 
                     <!-- Feature 2 -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="layout-grid" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -399,7 +404,7 @@
                     </div>
                     <!-- Feature 3 -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="layers" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -412,7 +417,7 @@
                     </div>
                     <!-- Feature 4 -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="heart-pulse" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -426,7 +431,7 @@
                     </div>
                     <!-- Feature 5 -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="external-link	" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -440,7 +445,7 @@
                     </div>
                     <!-- Feature 6 -->
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="database" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -452,7 +457,7 @@
                         </div>
                     </div>
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="activity" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -465,7 +470,7 @@
                         </div>
                     </div>
                     <div class="flex items-start space-x-4">
-                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center p-3">
                             <i data-lucide="shield-check" class="h-6 w-6 text-purple-600"></i>
                         </div>
                         <div>
@@ -554,7 +559,7 @@
 
             <div class="mt-12">
                 <a href="#"
-                    class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
+                    class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
                     Start Bidding Now →
                 </a>
             </div>
@@ -892,7 +897,8 @@
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Basic</h3>
                         <div class="mb-2">
-                            <span class="text-4xl font-bold text-blue-600">Free</span>
+                            <span
+                                class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Free</span>
                         </div>
                         <p class="text-gray-600 mb-6">Perfect for individuals and small practices</p>
                         <ul class="space-y-3 mb-6">
@@ -930,7 +936,7 @@
                 <div class="bg-white rounded-lg border-2 border-blue-500 shadow-lg scale-105 relative">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
                         <div
-                            class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-1">
+                            class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-1">
                             <i data-lucide="star" class="h-4 w-4 fill-current"></i>
                             <span>Most Popular</span>
                         </div>
@@ -938,7 +944,8 @@
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Standard</h3>
                         <div class="mb-2">
-                            <span class="text-4xl font-bold text-blue-600">$29</span>
+                            <span
+                                class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">$29</span>
                             <span class="text-gray-600">/month</span>
                         </div>
                         <p class="text-gray-600 mb-6">Ideal for growing medical practices</p>
@@ -976,7 +983,8 @@
                                 <span class="text-gray-700">API access</span>
                             </li>
                         </ul>
-                        <button class="w-full py-3 text-lg bg-blue-600 hover:bg-blue-700 text-white rounded-md">
+                        <button
+                            class="w-full py-3 text-lg bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-md">
                             Start Free Trial
                         </button>
                     </div>
@@ -987,7 +995,8 @@
                     <div class="p-6 text-center">
                         <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
                         <div class="mb-2">
-                            <span class="text-4xl font-bold text-blue-600">$99</span>
+                            <span
+                                class="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">$99</span>
                             <span class="text-gray-600">/month</span>
                         </div>
                         <p class="text-gray-600 mb-6">For large hospitals and healthcare systems</p>
@@ -1081,7 +1090,7 @@
                             <p class="text-sm text-gray-600">Cardiologist</p>
                         </div>
                     </div>
-                    <div class="flex items-center space-x-1 mb-4">
+                    <div class="flex items-center space-x-1 mb-4 ">
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
@@ -1393,15 +1402,9 @@
                 <!-- Contact Form - Single column layout -->
                 <div class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 md:p-8 border border-white/20">
                     <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-blue-600 mr-2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
+                       
                         Send us a message
-                    </h3>
+                    </h3>   
 
                     <form id="contact-form" class="space-y-5">
                         <div>
@@ -1452,12 +1455,7 @@
                 <!-- Contact Info -->
                 <div class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 md:p-8 border border-white/20">
                     <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="text-purple-600 mr-2">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
+                        
                         Contact Information
                     </h3>
 
@@ -1686,7 +1684,7 @@
 
     <script src="owl.carousel.min.js"></script>
     <script src="scripts.js"></script>
-   
+
 
 </body>
 
