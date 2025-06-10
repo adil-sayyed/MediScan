@@ -70,7 +70,7 @@ input:focus, textarea:focus, select:focus {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border: 1px solid #ebebeb;
-    border-radius: 30px
+    border-radius: 60px
 }
 
 .screen-carousel .owl-item.active.center img {
@@ -416,5 +416,88 @@ input:focus, textarea:focus, select:focus {
             animation: float-delay 10s ease-in-out infinite;
             animation-delay: 2s;
         }
+
+
+          .slider-container {
+            width: 100%;
+            overflow: visible;
+        }
+        .slider-track {
+            display: flex;
+            transition: transform 0.7s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .phone-frame-mask {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            mask-image: url('img/phone-frame2.png');
+            mask-size: contain;
+            mask-position: center;
+            mask-repeat: no-repeat;
+            pointer-events: none;
+            z-index: 20;
+        }
+
+
+        @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideOutToLeft {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .slide-in {
+    animation: slideInFromRight 0.7s ease-in-out forwards;
+  }
+  
+  .slide-out {
+    animation: slideOutToLeft 0.7s ease-in-out forwards;
+  }
+  
+  #slider-track {
+    transition: transform 0.7s ease-in-out;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    position: relative;
+  }
     
 
