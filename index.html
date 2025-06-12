@@ -192,39 +192,39 @@
         <div class="grid md:grid-cols-3 gap-8">
             <!-- Feature Card 1 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110">
-                <div class="w-20 h-20 mx-auto mb-6">
-                    <img src="/img/HIPAA-compliant.png" alt="HIPAA Icon" class="w-full h-full object-contain rounded-lg"
-                        loading="lazy" />
+                class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110 flex flex-col items-center text-center">
+                <div class="w-24 h-24 mb-6 flex items-center justify-center">
+                    <img src="/img/HIPAA compliance img.png" alt="HIPAA Icon"
+                        class="w-full h-full object-contain rounded-lg" loading="lazy" />
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">HIPAA Compliant</h3>
-                <p class="text-gray-600 leading-relaxed text-center">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">HIPAA Compliant</h3>
+                <p class="text-gray-600 leading-relaxed">
                     All patient data is processed and stored securely, meeting strict healthcare privacy standards.
                 </p>
             </div>
 
             <!-- Feature Card 2 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110">
-                <div class="w-20 h-20 mx-auto mb-6">
-                    <img src="/img/Brain-Diagnosis.jpg" alt="AI Diagnosis Icon"
-                        class="w-28 h-28 object-contain rounded-lg mx-auto" loading="lazy" />
+                class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110 flex flex-col items-center text-center">
+                <div class="w-24 h-24 mb-6 flex items-center justify-center">
+                    <img src="/img/Medical_Diagnosis.jpg" alt="AI Diagnosis Icon"
+                        class="w-full h-full object-contain rounded-lg" loading="lazy" />
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">AI-Powered Diagnosis</h3>
-                <p class="text-gray-600 leading-relaxed text-center">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">AI-Powered Diagnosis</h3>
+                <p class="text-gray-600 leading-relaxed">
                     Advanced algorithms analyze medical documents for accurate and fast disease detection and reporting.
                 </p>
             </div>
 
             <!-- Feature Card 3 -->
             <div
-                class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110">
-                <div class="w-28 h-28 mx-auto mb-6 flex items-center justify-center">
-                    <img src="/img/Prescription.jpg" alt="E-Prescription Icon"
+                class="bg-white rounded-xl p-8 shadow-xl hover:shadow-2xl transition-shadow transform transition-transform duration-300 hover:scale-110 flex flex-col items-center text-center">
+                <div class="w-24 h-24 mb-6 flex items-center justify-center">
+                    <img src="/img/E-Prescriptions.webp" alt="E-Prescription Icon"
                         class="w-full h-full object-contain rounded-lg" loading="lazy" />
                 </div>
-                <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">E-Prescription Ready</h3>
-                <p class="text-gray-600 leading-relaxed text-center">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">E-Prescription Ready</h3>
+                <p class="text-gray-600 leading-relaxed">
                     Instantly generate, store, and share digital prescriptions for seamless pharmacy integration.
                 </p>
             </div>
@@ -492,9 +492,9 @@
     </section>
 
 
-    <!-- App Features Section -->
+
     <section id="how-it-work" class="py-20 bg-gray-50 text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
             <div class="mb-4">
                 <!-- <span class="text-xs bg-blue-100 text-blue-600 py-1 px-3 rounded-full">Process</span> -->
             </div>
@@ -503,59 +503,86 @@
                 Our simple four-step process gets you the best medicine prices and fastest delivery
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-                <!-- Step 1 -->
+            <div class="relative">
+                <!-- Arrow Line Layer -->
                 <div
-                    class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
-                    <div
-                        class="bg-blue-100 text-blue-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                        <i data-lucide="search"></i>
+                    class="hidden lg:block absolute top-1/2 left-0 w-full z-0 transform -translate-y-1/2 pointer-events-none">
+                    <div class="relative max-w-7xl mx-auto px-4">
+                        <!-- Arrow between Card 1 and 2 -->
+                        <div class="absolute left-[25%] -translate-x-1/2">
+                            <i data-lucide="arrow-right"
+                                class="w-6 h-6 text-purple-400 hover:text-purple-600 transition-colors duration-300"></i>
+                        </div>
+                        <!-- Arrow between Card 2 and 3 -->
+                        <div class="absolute left-[50%] -translate-x-1/2">
+                            <i data-lucide="arrow-right"
+                                class="w-6 h-6 text-purple-400 hover:text-purple-600 transition-colors duration-300"></i>
+                        </div>
+                        <!-- Arrow between Card 3 and 4 -->
+                        <div class="absolute left-[75%] -translate-x-1/2">
+                            <i data-lucide="arrow-right"
+                                class="w-6 h-6 text-purple-400 hover:text-purple-600 transition-colors duration-300"></i>
+                        </div>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Search Medicine</h3>
-                    <p class="text-sm text-gray-600">
-                        Search for your required medications using our comprehensive medicine database.
-                    </p>
                 </div>
 
-                <!-- Step 2 -->
-                <div
-                    class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
-                    <div
-                        class="bg-blue-100 text-green-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                        <i data-lucide="gavel"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Place Your Bid</h3>
-                    <p class="text-sm text-gray-600">
-                        Set your desired price and let pharmacies compete for your business with their best offers.
-                    </p>
-                </div>
 
-                <!-- Step 3 -->
-                <div
-                    class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
-                    <div
-                        class="bg-blue-100 text-purple-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                        <i data-lucide="badge-percent"></i>
-                    </div>
-                    <h3 class="text-lg font-semibold mb-2">Choose Best Offer</h3>
-                    <p class="text-sm text-gray-600">
-                        Review bids from verified pharmacies and select the best price and delivery option.
-                    </p>
-                </div>
 
-                <!-- Step 4 -->
-                <div
-                    class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
+
+                <!-- Grid with Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10 max-w-7xl mx-auto px-4">
+
+                    <!-- Step 1 -->
                     <div
-                        class="bg-blue-100 text-red-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
-                        <i data-lucide="truck"></i>
+                        class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
+                        <div
+                            class="bg-purple-100 text-purple-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="search"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Search Medicine</h3>
+                        <p class="text-sm text-gray-600">Search for your required medications using our comprehensive
+                            medicine database.</p>
                     </div>
-                    <h3 class="text-lg font-semibold mb-2">Get Delivered</h3>
-                    <p class="text-sm text-gray-600">
-                        Receive your medications at your doorstep with real-time tracking and updates.
-                    </p>
+
+                    <!-- Step 2 -->
+                    <div
+                        class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
+                        <div
+                            class="bg-purple-100 text-purple-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="gavel"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Place Your Bid</h3>
+                        <p class="text-sm text-gray-600">Set your desired price and let pharmacies compete for your
+                            business with their best offers.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div
+                        class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
+                        <div
+                            class="bg-purple-100 text-purple-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="badge-percent"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Choose Best Offer</h3>
+                        <p class="text-sm text-gray-600">Review bids from verified pharmacies and select the best price
+                            and delivery option.</p>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div
+                        class="flex flex-col items-center text-center rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 py-10 px-2">
+                        <div
+                            class="bg-purple-100 text-purple-600 font-bold text-xl w-14 h-14 rounded-full flex items-center justify-center mb-4">
+                            <i data-lucide="truck"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-2">Get Delivered</h3>
+                        <p class="text-sm text-gray-600">Receive your medications at your doorstep with real-time
+                            tracking and updates.</p>
+                    </div>
+
                 </div>
             </div>
+
 
             <div class="mt-12">
                 <a href="#"
@@ -651,7 +678,8 @@
                 </button>
             </div>
             <div id="tab-diagnose-img" class="flex justify-center">
-                <img src="/img/Patient_Assessment.png" alt="Diagnosis Mockup" class=" w-full rounded-xl shadow-xl" />
+                <img src="/img/Patient_Assessment.png" alt="Diagnosis Mockup" class=" w-full rounded-xl shadow-xl"
+                    loading="lazy" />
             </div>
 
             <!-- Medical Records Tab -->
@@ -678,7 +706,8 @@
                 </button>
             </div>
             <div id="tab-records-img" class="flex justify-center hidden">
-                <img src="/img/Medical-Records.png" alt="Records Mockup" class=" w-full rounded-xl shadow-xl" />
+                <img src="/img/Medical-Records.png" alt="Records Mockup" class=" w-full rounded-xl shadow-xl"
+                    loading="lazy" />
             </div>
 
             <!-- Treatment Planning Tab -->
@@ -705,7 +734,7 @@
             </div>
             <div id="tab-treatment-img" class="flex justify-center hidden">
                 <img src="/img/Treatment_Planning.png" alt="Treatment Planning Mockup"
-                    class=" w-full rounded-xl shadow-xl" />
+                    class=" w-full rounded-xl shadow-xl" loading="lazy" />
             </div>
 
             <!-- Patient Monitoring Tab -->
@@ -732,7 +761,7 @@
             </div>
             <div id="tab-monitoring-img" class="flex justify-center hidden">
                 <img src="/img/Patient-Monitoring.png" alt="Patient Monitoring Mockup"
-                    class=" w-full rounded-xl shadow-xl" />
+                    class=" w-full rounded-xl shadow-xl" loading="lazy" />
             </div>
         </div>
     </div>
@@ -1098,8 +1127,8 @@
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                     </div>
                     <div class="relative">
-                        <i data-lucide="quote" class="absolute -top-2 -left-2 h-8 w-8 text-blue-200"></i>
-                        <p class="text-gray-700 leading-relaxed pl-6">
+                        <i data-lucide="quote" class="absolute  h-8 w-8 text-blue-200"></i>
+                        <p class="text-gray-700 leading-relaxed pl-6 ml-4">
                             MediScan has revolutionized how we handle patient prescriptions. The accuracy is incredible
                             and it saves us hours every day. Highly recommended for any medical practice.
                         </p>
@@ -1123,8 +1152,8 @@
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                     </div>
                     <div class="relative">
-                        <i data-lucide="quote" class="absolute -top-2 -left-2 h-8 w-8 text-blue-200"></i>
-                        <p class="text-gray-700 leading-relaxed pl-6">
+                        <i data-lucide="quote" class="absolute  h-8 w-8 text-blue-200"></i>
+                        <p class="text-gray-700 leading-relaxed pl-6 ml-4">
                             The batch processing feature is a game-changer for our pharmacy. We can process hundreds of
                             prescriptions in minutes instead of hours. Excellent software!
                         </p>
@@ -1148,8 +1177,8 @@
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                     </div>
                     <div class="relative">
-                        <i data-lucide="quote" class="absolute -top-2 -left-2 h-8 w-8 text-blue-200"></i>
-                        <p class="text-gray-700 leading-relaxed pl-6">
+                        <i data-lucide="quote" class="absolute  h-8 w-8 text-blue-200"></i>
+                        <p class="text-gray-700 leading-relaxed pl-6 ml-4">
                             The structured output and export options make record keeping so much easier. HIPAA
                             compliance gives us peace of mind when handling sensitive patient data.
                         </p>
@@ -1173,8 +1202,8 @@
                         <i data-lucide="star" class="h-4 w-4 text-gray-300"></i>
                     </div>
                     <div class="relative">
-                        <i data-lucide="quote" class="absolute -top-2 -left-2 h-8 w-8 text-blue-200"></i>
-                        <p class="text-gray-700 leading-relaxed pl-6">
+                        <i data-lucide="quote" class="absolute  h-8 w-8 text-blue-200"></i>
+                        <p class="text-gray-700 leading-relaxed pl-6 ml-4">
                             In the ER, every second counts. MediScan's real-time processing helps us quickly digitize
                             patient records and make faster treatment decisions.
                         </p>
@@ -1198,8 +1227,8 @@
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                     </div>
                     <div class="relative">
-                        <i data-lucide="quote" class="absolute -top-2 -left-2 h-8 w-8 text-blue-200"></i>
-                        <p class="text-gray-700 leading-relaxed pl-6">
+                        <i data-lucide="quote" class="absolute  h-8 w-8 text-blue-200"></i>
+                        <p class="text-gray-700 leading-relaxed pl-6 ml-4">
                             User-friendly interface that even non-tech-savvy staff can use easily. The drug
                             categorization feature helps prevent medication errors.
                         </p>
@@ -1223,8 +1252,8 @@
                         <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
                     </div>
                     <div class="relative">
-                        <i data-lucide="quote" class="absolute -top-2 -left-2 h-8 w-8 text-blue-200"></i>
-                        <p class="text-gray-700 leading-relaxed pl-6">
+                        <i data-lucide="quote" class="absolute  h-8 w-8 text-blue-200"></i>
+                        <p class="text-gray-700 leading-relaxed pl-6 ml-4">
                             As a patient with multiple prescriptions, MediScan helps me keep track of all my medications
                             digitally. It's incredibly convenient and secure.
                         </p>
@@ -1249,7 +1278,7 @@
             <div id="accordion" class="space-y-4">
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>What file formats does MediScan support?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1261,7 +1290,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>How accurate is the OCR technology?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1273,7 +1302,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>Can I use MediScan on my mobile device?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1284,7 +1313,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>How secure is my medical data?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1296,7 +1325,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>What happens to my documents after processing?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1308,7 +1337,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>Do you offer API integration?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1319,7 +1348,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>Can MediScan identify drug interactions?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1331,7 +1360,7 @@
                 </div>
                 <div class="border border-gray-200 rounded-lg px-6">
                     <button
-                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between">
+                        class="accordion-button w-full text-left font-semibold text-gray-900 hover:text-blue-600 py-4 flex justify-between items-center">
                         <span>What kind of support do you provide?</span>
                         <i data-lucide="chevron-down" class="h-4 w-4 transition-transform"></i>
                     </button>
@@ -1348,9 +1377,9 @@
     </section>
 
     <div class="relative mt-10 h-[400px] md:h-[500px] overflow-hidden">
-        <!-- Background image with gradient overlay -->
+       
         <div class="absolute inset-0">
-            <!-- Replace with your actual image path -->
+          
             <img src="/img/meeting.jpg" alt="Background" class="w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-r from-purple-700/90 to-blue-500/90"></div>
         </div>
@@ -1402,9 +1431,9 @@
                 <!-- Contact Form - Single column layout -->
                 <div class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 md:p-8 border border-white/20">
                     <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
-                       
+
                         Send us a message
-                    </h3>   
+                    </h3>
 
                     <form id="contact-form" class="space-y-5">
                         <div>
@@ -1455,7 +1484,7 @@
                 <!-- Contact Info -->
                 <div class="bg-white/90 backdrop-blur-md rounded-2xl shadow-lg p-6 md:p-8 border border-white/20">
                     <h3 class="text-xl font-bold text-gray-800 mb-6 flex items-center">
-                        
+
                         Contact Information
                     </h3>
 
@@ -1546,43 +1575,19 @@
                         <div class="flex space-x-3">
                             <a href="#"
                                 class="bg-blue-50 hover:bg-blue-100 text-blue-600 p-2.5 rounded-full transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg>
+                                <img src="/img/facebook.svg" alt="Facebook" class="w-5 h-5" loading="lazy">
                             </a>
                             <a href="#"
                                 class="bg-blue-50 hover:bg-blue-100 text-blue-400 p-2.5 rounded-full transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                                    </path>
-                                </svg>
+                                <img src="/img/twitter.svg" alt="Twitter" class="w-5 h-5" loading="lazy">
                             </a>
                             <a href="#"
                                 class="bg-blue-50 hover:bg-blue-100 text-blue-700 p-2.5 rounded-full transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path
-                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
-                                    </path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
+                                <img src="/img/linkedin.svg" alt="LinkedIn" class="w-5 h-5" loading="lazy">
                             </a>
                             <a href="#"
                                 class="bg-blue-50 hover:bg-blue-100 text-pink-600 p-2.5 rounded-full transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg>
+                                <img src="/img/instagram.svg" alt="Instagram" class="w-5 h-5" loading="lazy">
                             </a>
                         </div>
                     </div>
@@ -1607,16 +1612,20 @@
                     </p>
                     <div class="flex space-x-4">
                         <a href="#" class="hover:text-blue-400">
-                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                            <img src="/img/facebook.svg" alt="Facebook"
+                                class="h-5 w-5 filter brightness-0 invert loading-lazy">
                         </a>
                         <a href="#" class="hover:text-blue-400">
-                            <i data-lucide="twitter" class="h-5 w-5"></i>
+                            <img src="/img/twitter.svg" alt="Facebook"
+                                class="h-5 w-5 filter brightness-0 invert loading-lazy">
                         </a>
                         <a href="#" class="hover:text-blue-400">
-                            <i data-lucide="linkedin" class="h-5 w-5"></i>
+                            <img src="/img/linkedin.svg" alt="Facebook"
+                                class="h-5 w-5 filter brightness-0 invert loading-lazy">
                         </a>
                         <a href="#" class="hover:text-blue-400">
-                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                            <img src="/img/instagram.svg" alt="Facebook"
+                                class="h-5 w-5 filter brightness-0 invert loading-lazy">
                         </a>
                     </div>
                 </div>
